@@ -3,7 +3,7 @@ new TypeIt("#tqyher", {
         cursorSpeed: 1000,
         speed: 100
     })
-    .type("杨惠超 && 汪丽媛")
+    .type("小碗儿 && 小挑儿")
     .pause(2000)
     .delete(null, {
         delay: 500
