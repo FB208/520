@@ -308,10 +308,8 @@
 
         });
 
-        function openXuYu() {
-            $("#page3-first").hide();
-            $("#page3-second").show();
-            new TypeIt("#talkList", {
+
+        var talkList = new TypeIt("#talkList", {
                     // loop: true,
                     cursorSpeed: 1000,
                     speed: 80
@@ -355,8 +353,11 @@
                 .pause(1000)
                 .type("哦")
                 .pause(1000)
-                .type("❤")
-                .go();
+                .type("❤");
+        function openXuYu() {
+            $("#page3-first").hide();
+            $("#page3-second").show();
+            talkList.go();
         }
 
 
